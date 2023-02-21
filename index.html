@@ -5,13 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="navbar.css"/>
-        <link rel="stylesheet" href="index.css"/>
+        <link rel="stylesheet" href="../css/navbar.css"/>
+        <link rel="stylesheet" href="../css/index.css"/>
         <title>เรื่องเล่าอุตรดิตถ์</title>
     </head>
     <body>
-        <headder>
+        
+            
             <div class="navbar">
+                
+                
                 <div class="logo">หน้าหลัก</div>
 
                 <ul class="link">
@@ -22,21 +25,22 @@
                 </ul>
                 <a href="../html/cr.html"class="action_btn">Credit</a>
                 <div class="toggle_btn"><i class="fa-solid fa-bars-staggered"></i></div>
-            </div>
-            <div class="dropdown_menu">
-                <a>
-                <li><a href="../html/index.html">หน้าหลัก</a></li>
+                </div>
+                    <div class="dropdown_menu">
+                    <a>
+                    <li><a href="../html/index.html">หน้าหลัก</a></li>
                     <li><a href="../html/s1.html">Story1</a></li>
                     <li><a href="../html/s2.html">Story2</a></li>
                     <li><a href="../html/s3.html">Story3</a></li>
                     <li><a href="../html/cr.html"class="action_btn">Credit</a></li>
-                </a>
+                    </a>
+                    
             </div>
-        </headder>
+        
 
         
         
-        <main>
+        
 
 
 
@@ -56,8 +60,8 @@
 
             
             <section id="hero">
-                <h1>หน้าหลัก</h1>
-                <p>hello Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel explicabo, ipsa consequatur vero amet quod qui reprehenderit, nemo quis modi sit autem voluptates quam tempore corrupti laborum id ullam? Rerum.</p>
+                <h1>หน้าหลัก </h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, molestiae consectetur ut voluptates dolore voluptate dolores. Sint officiis vitae sit quibusdam alias mollitia voluptatum, optio eum molestias laborum a maxime vel nostrum molestiae quo aperiam facilis quaerat odit assumenda et. Consequuntur, tempore sapiente. Nemo perspiciatis natus nostrum laudantium dolor facere optio esse quisquam! Assumenda ea amet ad consequatur quibusdam iste quae eligendi. Provident iusto quis dolorum repellat cupiditate suscipit perferendis nesciunt, sunt dolores harum at dolore atque eos. Ipsum, ea quis tempora labore minus, cum aspernatur architecto voluptatem asperiores accusantium tempore est in! Obcaecati vero iusto exercitationem placeat porro. Hic, ut libero provident suscipit doloribus reiciendis! Cum commodi hic ab, accusantium nisi fuga non eaque similique tempore quisquam dolorum nostrum, distinctio explicabo qui. Nobis recusandae illum ducimus blanditiis nulla! Veritatis illo mollitia assumenda odio cupiditate tenetur. Eligendi sequi, repellat temporibus deserunt ea itaque totam. Laborum quidem consequuntur architecto aut obcaecati nulla blanditiis distinctio optio vitae magnam dolorem, quisquam aliquid assumenda repudiandae facilis veritatis reprehenderit eligendi laudantium eum. Molestiae at culpa, voluptate ratione omnis fuga dolorum? Dicta, quae, possimus asperiores quia debitis reprehenderit, explicabo eos sit earum totam iusto facere modi architecto animi aut mollitia vitae. Mollitia architecto tempore temporibus soluta error perferendis expedita, possimus voluptatem quo odit ipsa? Beatae voluptatum sit nihil illum placeat quam perspiciatis, laboriosam quis recusandae corrupti explicabo accusamus saepe, repellendus ab pariatur vero quasi! Quae voluptatem itaque beatae commodi earum neque placeat vero atque veniam magni numquam est, vel, quam quos libero sit provident assumenda ex soluta minus aspernatur quas? Soluta aliquid voluptate ad facilis molestiae provident doloremque numquam? Animi libero, optio molestias porro delectus, non odit aspernatur quas impedit repellendus temporibus commodi corrupti. Iure nemo inventore numquam soluta. Dolore fuga, ipsam incidunt, quas molestiae earum quo maiores est vero minima itaque facilis nulla placeat provident.</p>
 
             </section>
         
@@ -71,17 +75,6 @@
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        </main>
         <script>
              const toggleBtn = document.querySelector('.toggle_btn')
              const toggleBtnIcon = document.querySelector('.toggle_btn i')
@@ -94,9 +87,27 @@
                 const isOpen = dropDownMenu.classList.contains('open')
 
                 toggleBtnIcon.classList = isOpen
+
                 ? 'fa-solid fa-xmark'
                 : 'fa-solid fa-bars-staggered'
+                
              }
+        </script>
+        <script type="text/javascript">
+            var lastScrollTop = 0;
+            polmung = document.getElementsByClassName("navbar");
+            window.addEventListener("scroll",function(){
+                var ScrollTop = window.pageYOffset || document.documentElement.ScrollTop;
+                if(ScrollTop > lastScrollTop){
+                    polmung[0].style.top= "-80px" ;
+                }else{
+                    polmung[0].style.top= "0px";
+                }
+                lastScrollTop =ScrollTop;
+                
+            })
+                 
+
         </script>
 
     </body>
