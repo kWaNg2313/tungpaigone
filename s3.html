@@ -94,6 +94,24 @@
                 : 'fa-solid fa-bars-staggered'
              }
         </script>
+         </script>
+        <script type="text/javascript">
+            var lastScrollTop = 0;
+            polmung = document.getElementsByClassName("navbar");
+            window.addEventListener("scroll",function(){
+                var ScrollTop = window.pageYOffset || document.documentElement.ScrollTop;
+                if(ScrollTop > lastScrollTop){
+                    polmung[0].style.top= "-80px" ;
+                }else{
+                    polmung[0].style.top= "0px";
+                }
+                lastScrollTop =ScrollTop;
+                
+            })
+                 
+
+        </script>
+
 
     </body>
 </html>
