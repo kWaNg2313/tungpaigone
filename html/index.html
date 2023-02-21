@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../css/navbar.css"/>
+        <link rel="stylesheet" href="../css/index.css"/>
+        <title>เรื่องเล่าอุตรดิตถ์</title>
+    </head>
+    <body>
+        <headder>
+            <div class="navbar">
+                <div class="logo">หน้าหลัก</div>
+
+                <ul class="link">
+                    <li><a href="../html/index.html">หน้าหลัก</a></li>
+                    <li><a href="../html/s1.html">Story1</a></li>
+                    <li><a href="../html/s2.html">Story2</a></li>
+                    <li><a href="../html/s3.html">Story3</a></li>
+                </ul>
+                <a href="../html/cr.html"class="action_btn">Credit</a>
+                <div class="toggle_btn"><i class="fa-solid fa-bars-staggered"></i></div>
+            </div>
+            <div class="dropdown_menu">
+                <a>
+                <li><a href="../html/index.html">หน้าหลัก</a></li>
+                    <li><a href="../html/s1.html">Story1</a></li>
+                    <li><a href="../html/s2.html">Story2</a></li>
+                    <li><a href="../html/s3.html">Story3</a></li>
+                    <li><a href="../html/cr.html"class="action_btn">Credit</a></li>
+                </a>
+            </div>
+        </headder>
+
+        
+        
+        <main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            <section id="hero">
+                <h1>หน้าหลัก</h1>
+                <p>hello Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel explicabo, ipsa consequatur vero amet quod qui reprehenderit, nemo quis modi sit autem voluptates quam tempore corrupti laborum id ullam? Rerum.</p>
+
+            </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </main>
+        <script>
+             const toggleBtn = document.querySelector('.toggle_btn')
+             const toggleBtnIcon = document.querySelector('.toggle_btn i')
+             const dropDownMenu = document.querySelector('.dropdown_menu')
+             const toggleBtn1 = document.querySelector('.a1')
+             const toggleBtn1u = document.querySelector('.a1u')
+
+             toggleBtn.onclick =function(){
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars-staggered'
+             }
+        </script>
+
+    </body>
+</html>
